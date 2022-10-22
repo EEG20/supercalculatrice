@@ -17,8 +17,11 @@ if calculatrice == 1 :
 
     print("c'est un nombre premier")
 if calculatrice == 2 :
-    hypoténuse = float(input("entre l'hypoténuse :" ))
-    adjacent = float(input("entre le coté adjacent :"))
-    opposé = float(input("entre le coté opposé :"))
+    print("si vous voulez calculer une longueur métaie 0 a cette longueur")
+    hypoténuse = int(input("entre l'hypoténuse :" ))
+    adjacent = int(input("entre le coté adjacent :"))
+    opposé = int(input("entre le coté opposé :"))
     if hypoténuse == 0:
-        print(f"l'hypoténuse sera de {math.sqrt(opposé^2+adjacent^2)}cm ")
+        print(f"l'hypoténuse sera de {math.sqrt(opposé**2+adjacent**2)}cm ")
+    if adjacent == 0 :
+        print(f"le coté adjacent sera de {math.sqrt(hypoténuse**2-opposé**2)}cm ")
